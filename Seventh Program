@@ -1,0 +1,20 @@
+import java.util.*;
+public class Fibonacci 
+{
+		public static void main(String args[])  
+		{    
+		 int a=0,b=1,c,count;
+		 System.out.print("Enter the number of terms to be printed: ");
+		 Scanner sc = new Scanner(System.in);
+		 count = sc.nextInt();
+		 System.out.print(a+" "+b);//printing 0 and 1       
+		 for(int i=3;i<=count;i++)//loop starts from 3 because 2 terms are already printed    
+		 {    
+		  c=a+b;    
+		  System.out.print(" "+c);    
+		  a=b;    
+		  b=c;    
+		 }    
+		}
+}  
+
