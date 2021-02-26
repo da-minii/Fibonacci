@@ -1,0 +1,24 @@
+import java.util.*;
+public class Fibonacci 
+{  
+		 static int a=0,b=1,c=0;    
+		 static void print(int count)
+		 {    
+		    if(count>0)
+		    {    
+		         c = a + b;    
+		         a = b;    
+		         b = c;    
+		         System.out.print(" "+c);   
+		         print(count-1);    
+		     }    
+		 }    
+		 public static void main(String args[])
+		 {
+			 Scanner sc = new Scanner(System.in);
+			 System.out.print("Enter the number of terms to be printed: ");
+		     int count=sc.nextInt();    
+		     System.out.print(a+" "+b);//printing 0 and 1    
+		     print(count-2);//count-2 because 2 numbers are already printed   
+		 }  
+		}  
